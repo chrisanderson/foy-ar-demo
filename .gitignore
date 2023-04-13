@@ -2,3 +2,4 @@ assets/*.psd
 node_modules/
 assets/*.blend
 desktop.ini
+.DS_Store
