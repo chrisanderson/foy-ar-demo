@@ -3,3 +3,4 @@ node_modules/
 assets/*.blend
 desktop.ini
 .DS_Store
+assets/.DS_Store
