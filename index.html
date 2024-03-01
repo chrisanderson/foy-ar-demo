@@ -67,10 +67,13 @@
       vr-mode-ui="enabled: false;"
       renderer="logarithmicDepthBuffer: true;"
       embedded
-      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+      inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
       <a-assets>
         <a-asset-item id="asset-peter" src="assets/peter2.gltf"></a-asset-item>
       </a-assets>
+
+      <a-box color="#0095DD" position="0 1 0" rotation="20 40 0"></a-box>
       
       <!-- <a-marker preset="hiro"> -->
       <!-- <a-marker> -->
