@@ -1,47 +1,49 @@
 <!doctype HTML>
 <html>
   <title>foy ar demo</title>
-  <!-- <script data-cfasync="false" src="https://aframe.io/releases/1.1.0/aframe.min.js"></script> -->
-  <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script> -->
-  <header>
+  
+  <head>
+    <!-- <script data-cfasync="false" src="https://aframe.io/releases/1.1.0/aframe.min.js"></script> -->
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script> -->
+    
     <!-- <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script> -->
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-  </header>
 
-  <!-- <script data-cfasync="false" src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script> -->
-  <!-- <script src="https://raw.githack.com/jeromeetienne/AR.js/2.2.2/aframe/build/aframe-ar.js"></script> -->
-  <!-- Marker Tracking + Location Based AR -->
-  <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script> -->
-  <!-- <script data-cfasync="false" src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script> --> <!-- Image Tracking + Location Based AR -->
-  <!-- Image Tracking + Location Based AR -->
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <!-- <script data-cfasync="false" src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script> -->
+    <!-- <script src="https://raw.githack.com/jeromeetienne/AR.js/2.2.2/aframe/build/aframe-ar.js"></script> -->
+    <!-- Marker Tracking + Location Based AR -->
+    <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script> -->
+    <!-- <script data-cfasync="false" src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script> --> <!-- Image Tracking + Location Based AR -->
+    <!-- Image Tracking + Location Based AR -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
 
-  <style>
-    html {
-      background-color: rgba(32, 32, 32, 0.8);
-      color:rgb(168, 168, 168);
-    }
+    <style>
+      html {
+        background-color: rgba(32, 32, 32, 0.8);
+        color:rgb(168, 168, 168);
+      }
 
-    .arjs-loader {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.8);
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .arjs-loader div {
-      text-align: center;
-      font-size: 1.25em;
-      color: white;
-    }
-  </style>
+      .arjs-loader {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .arjs-loader div {
+        text-align: center;
+        font-size: 1.25em;
+        color: white;
+      }
+    </style>
+  </head>
 
   <body style='margin : 0px; overflow: hidden;'>
     <!-- minimal loader shown until image descriptors are loaded -->
