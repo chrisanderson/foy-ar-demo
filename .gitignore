@@ -4,3 +4,5 @@ assets/*.blend
 desktop.ini
 .DS_Store
 assets/.DS_Store
+**/.DS_Store
+**/desktop.ini
