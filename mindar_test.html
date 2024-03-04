@@ -4,15 +4,15 @@
   
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+ 
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
   </head>
 
   <body>
-    <a-scene mindar-image="imageTargetSrc: assets/combined_test.mind;" 
+    <a-scene stats mindar-image="imageTargetSrc: assets/combined_test.mind; maxTrack: 2; uiScanning: no" 
     color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" 
-    vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false"
+    vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" 
     inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
       <a-assets>
         <img id="canoe" src="assets/canoe/canoe.png" />
@@ -23,6 +23,9 @@
 
       <a-entity mindar-image-target="targetIndex: 0">
         <a-plane src="#canoe" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 1">
         <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.5 0.5 0.5" src="#peter"
           animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
         >
