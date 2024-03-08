@@ -6,3 +6,5 @@ desktop.ini
 assets/.DS_Store
 **/.DS_Store
 **/desktop.ini
+**/*~lock~
+**/*.lock
